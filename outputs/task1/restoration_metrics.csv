@@ -1,0 +1,9 @@
+Noise,Filter,PSNR (dB),SSIM
+Gaussian noise (sigma=25),none (noisy input),20.536,0.455
+Gaussian noise (sigma=25),Median 3x3,24.182,0.623
+Gaussian noise (sigma=25),Median 5x5,23.098,0.645
+Gaussian noise (sigma=25),Gaussian 5x5 s=1.2,24.553,0.716
+Salt & pepper (5%),none (noisy input),17.968,0.46
+Salt & pepper (5%),Median 3x3,26.721,0.893
+Salt & pepper (5%),Median 5x5,23.759,0.784
+Salt & pepper (5%),Gaussian 5x5 s=1.2,23.829,0.669

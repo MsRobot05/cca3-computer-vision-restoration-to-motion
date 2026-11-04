@@ -1,0 +1,5 @@
+Experiment,Keypoints in img2,Good matches (ratio 0.75),RANSAC inliers,Inlier %
+img1_vs_img2_original,3681,904,869,96.1
+img1_vs_img2_resized_50pct,1198,298,282,94.6
+img1_vs_img2_rotated_45deg,4000,926,903,97.5
+img1_vs_img2_rotated_90deg,3662,894,866,96.9

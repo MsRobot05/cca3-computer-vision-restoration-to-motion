@@ -1,0 +1,37 @@
+
+===== task1_restoration_segmentation =====
+                    Noise             Filter  PSNR (dB)  SSIM
+Gaussian noise (sigma=25) none (noisy input)     20.536 0.455
+Gaussian noise (sigma=25)         Median 3x3     24.182 0.623
+Gaussian noise (sigma=25)         Median 5x5     23.098 0.645
+Gaussian noise (sigma=25) Gaussian 5x5 s=1.2     24.553 0.716
+       Salt & pepper (5%) none (noisy input)     17.968 0.460
+       Salt & pepper (5%)         Median 3x3     26.721 0.893
+       Salt & pepper (5%)         Median 5x5     23.759 0.784
+       Salt & pepper (5%) Gaussian 5x5 s=1.2     23.829 0.669
+Watershed objects found: 3
+Connected components WITHOUT watershed: 2
+
+===== task2_features =====
+HOG vector length: 12420
+SIFT keypoints: 4000 3681 descriptor shape (4000, 128)
+                Experiment  Keypoints in img2  Good matches (ratio 0.75)  RANSAC inliers  Inlier %
+     img1_vs_img2_original               3681                        904             868      96.0
+img1_vs_img2_resized_50pct               1198                        298             282      94.6
+img1_vs_img2_rotated_45deg               4000                        926             906      97.8
+img1_vs_img2_rotated_90deg               3662                        894             859      96.1
+
+===== task3_detection =====
+Image / frame  Haar faces  Haar bodies  YOLO detections                                                        YOLO classes + confidence
+  video_t0.5s           0            0                5        person 0.80, umbrella 0.51, car 0.40, traffic light 0.34, motorcycle 0.28
+    video_t2s           0            0                6                car 0.74, car 0.71, car 0.70, motorcycle 0.30, car 0.28, car 0.25
+    video_t4s           0            0                6                       car 0.73, car 0.66, car 0.38, car 0.33, car 0.32, car 0.30
+    video_t8s           0            0                7 car 0.80, motorcycle 0.75, car 0.74, car 0.55, person 0.42, car 0.36, truck 0.29
+   video_t12s           0            0                3                                                     car 0.82, car 0.64, car 0.38
+      durga_1           4            0                1                                                                      person 0.76
+      durga_2           0            0                4                                umbrella 0.50, person 0.44, bed 0.27, person 0.26
+
+===== task4_motion =====
+      framediff_fg_%  gmm_fg_%  LK_mean_px  LK_p90_px
+mean            1.72      2.57        1.19   3.660000
+max            17.11     22.03        6.53  27.690001

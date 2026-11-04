@@ -1,0 +1,7 @@
+opencv-python>=4.8
+numpy
+matplotlib
+scikit-image
+scipy
+pandas
+ultralytics

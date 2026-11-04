@@ -48,7 +48,7 @@ Photos are in `data/`. The raw video is large: download from **<GOOGLE DRIVE LIN
 python -m venv venv && source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python src/run_all.py
-python docs/build_report.py
+
 ```
 
 ## ⚠️ Known limitations

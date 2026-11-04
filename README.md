@@ -50,9 +50,6 @@ pip install -r requirements.txt
 python src/run_all.py
 python docs/build_report.py
 ```
-## 📄 Report and video
-- Technical report: `docs/Technical_Report.docx`
-- Explanation video: **<DRIVE LINK>**
 
 ## ⚠️ Known limitations
 Hand-held video causes false motion at edges; Haar and YOLO use pretrained default weights with no fine-tuning.
